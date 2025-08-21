@@ -10,6 +10,16 @@ This repository provides a set of bash scripts to manage your [Apache Airflow](h
 
 ## Usage
 
+### Run the Init Script
+
+Running the `init-env.sh` will:
+- download the docker-compose.yaml file
+- download the airflow cli
+- build the default airflow.cfg
+- initialize airflow
+- execute the compose up script (can be changed to include flower)
+  
+
 All environment management is done via the `airflow.sh` script:
 
 **See detailed instructions:**  [airflow cli usage guide](https://airflow.apache.org/docs/apache-airflow/stable/howto/docker-compose/index.html#running-the-cli-commands)
